@@ -1,8 +1,21 @@
 import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import { client } from '../sanity/lib/client';
 
-const Hero = () => {
+interface HeroData {
+  title: string;
+  button: string;
+  image: string;
+}
+
+const Hero = async () => {
+  const hero: HeroData[] = await client.fetch(
+    `*[_type == "hero"]{title,button,"image": image.asset->url}`
+  );
+
+  const { title, button, image } = hero[0]; // TypeScript checks applied here
+
   return (
     <div className="bg-[#FBEBB5]">
       {/* Container */}
@@ -10,20 +23,20 @@ const Hero = () => {
         {/* Text Section */}
         <div className="flex flex-col items-center sm:items-start text-center sm:text-left sm:w-1/2">
           <p className="text-[24px] sm:text-[36px] lg:text-[64px] font-medium leading-[1.2]">
-            Rocket single seater
+            {title}
           </p>
           <Link
-            href="../Shop"
+            href="/shopnow"
             className="mt-4 text-[16px] sm:text-[20px] lg:text-[24px] font-medium text-black bg-yellow-500 px-6 py-2 rounded-md transition-transform hover:scale-105"
           >
-            Shop Now
+            {button}
           </Link>
         </div>
 
         {/* Image Section */}
         <div className="mt-8 sm:mt-0 sm:w-1/2 flex justify-center">
           <Image
-            src="/pic1.png"
+            src={image}
             alt="Hero Image"
             width={803}
             height={1000}

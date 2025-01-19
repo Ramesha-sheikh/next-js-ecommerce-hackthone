@@ -1,10 +1,10 @@
 import React from 'react'
-import Contactform  from '@/Components/Contact/contacts'
+import Shoppage from '@/Components/Shopcontent'
 
 const page = () => {
   return (
     <div>
-      <Contactform />
+     <Shoppage/>
     </div>
   )
 }

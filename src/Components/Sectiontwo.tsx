@@ -23,7 +23,7 @@ const Sectiontwo = () => {
               <p className="font-[500] text-[24px] md:text-[36px] leading-[36px] md:leading-[54px]">
                 Side Table
               </p>
-              <Link href='../Shop'>
+              <Link href='/shopnow'>
               <p className="underline underline-offset-8 mt-2 cursor-pointer font-[500] text-[16px] transition-transform hover:scale-105 hover:text-gray-700">
                 View More
               </p>
@@ -42,9 +42,9 @@ const Sectiontwo = () => {
             />
             <div className="sm:mr-32 sm:-mt-20">
               <p className="font-[500] text-[24px] md:text-[36px] leading-[36px] md:leading-[54px]">
-                Side Table
+                Sofa
               </p>
-              <Link href='../Shop'>
+              <Link href='/shopnow'>
               <p className="underline underline-offset-8 mt-2 cursor-pointer font-[500] text-[16px] transition-transform hover:scale-105 hover:text-gray-700">
                 View More
               </p>

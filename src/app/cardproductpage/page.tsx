@@ -1,10 +1,11 @@
 import React from 'react'
-import Contactform  from '@/Components/Contact/contacts'
+import Sidebar from '@/Components/Cardsidebar/Sidebar'
 
 const page = () => {
   return (
     <div>
-      <Contactform />
+        <Sidebar/>
+      
     </div>
   )
 }

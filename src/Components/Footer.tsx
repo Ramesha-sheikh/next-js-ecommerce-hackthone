@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <div className="max-w-[1440px] bg-white py-12 px-4">
+      <div className="max-w-[1440px] bg-white py-12 px-4 ">
         <div className="max-w-[1240px]  mx-auto flex flex-wrap justify-between items-start gap-8">
           {/* Address Section */}
           <div className="w-full sm:w-[285px]">
@@ -73,6 +73,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+     
     </div>
   );
 };

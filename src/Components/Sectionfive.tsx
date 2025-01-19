@@ -31,7 +31,7 @@ const Sectionfive = () => {
             </div>
             <div className="mt-4">
               <Link
-                href="../Shop"
+                href="/Singleproduct"
                 className="text-[16px] md:text-[20px] leading-[28px] font-[500] text-[#000000] border border-[#9b9b9b] py-3 px-6 inline-block hover:bg-[#faeec7] transition-colors"
               >
                 Order Now

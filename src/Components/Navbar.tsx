@@ -36,7 +36,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/Shop"
+              href="/shopnow"
               className="text-black text-[14px] sm:text-[16px] font-[500] leading-[24px]"
             >
               Shop
@@ -48,7 +48,7 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              href="/Contact"
+              href="/contact"
               className="text-black text-[14px] sm:text-[16px] font-[500] leading-[24px]"
             >
               Contact
@@ -134,9 +134,11 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="p-4 flex justify-between space-x-2 border-t-[1px] border-[#D9D9D9]">
-          <button className="w-1/2 py-2 bg-white text-sm font-medium border-[1px] border-black rounded-full hover:bg-black hover:text-white">
+          <Link href='/Cart'>
+          <button className="px-9 py-2 bg-white text-sm font-medium border-[1px] border-black rounded-full hover:bg-black hover:text-white">
             View Cart
           </button>
+          </Link>
           <Link href="/CheckOut">
           <button className="px-9 py-2 bg-white text-black border-[1px] border-black text-sm font-medium rounded-full hover:bg-black hover:text-white">
           Checkout
